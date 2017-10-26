@@ -7,6 +7,14 @@ class TestController < ApplicationController
     head 200
   end
 
+  def get_and_params
+    puts '>>> params'
+    p params[:param1]
+    p params[:param2]
+    p params[:param3]
+    head 200
+  end
+
 
   #skip_before_filter :verify_authenticity_token
   protect_from_forgery :except => ["post"]
