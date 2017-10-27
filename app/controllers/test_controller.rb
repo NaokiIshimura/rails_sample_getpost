@@ -2,6 +2,7 @@ class TestController < ApplicationController
 
   def get
     puts '>>> params'
+    p params
     p params[:id]
     p params[:name]
     head 200
@@ -9,9 +10,12 @@ class TestController < ApplicationController
 
   def get_and_params
     puts '>>> params'
+    p params
     p params[:param1]
     p params[:param2]
     p params[:param3]
+    p params[:id]
+    p params[:name]
     head 200
   end
 
